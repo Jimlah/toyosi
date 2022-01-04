@@ -5,13 +5,14 @@ import ProductDetail from './../../components/Product/ProductDetail';
 import db from './../../db';
 import ProductSection from './../../components/Product/ProductSection';
 import food from './../../assets/img/food.svg';
+import Cart from './../Cart/Cart';
 
 const Main = () => {
-    console.log(db);
     return (
         <div className="font-sans bg-fixed bg-gray-200 ">
             <NavBar />
             <Header />
+            <Cart />
             <ProductDetail />
             <div className="flex items-center px-6 space-x-4 overflow-x-auto bg-white h-11 sm:px-10">
                 {Object.keys(db).map((key) => (
